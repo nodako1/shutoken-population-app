@@ -1,0 +1,54 @@
+:root {
+  /* グループ色: 色覚多様性に配慮したパレット(Okabe-Ito)から選定
+     参考: https://jfly.uni-koeln.de/colorset/ */
+  --group-0: #a6d9f7; /* 空色系 */
+  --group-1: #ffd8a6; /* 橙系 */
+  --group-2: #c3e6b3; /* 黄緑系 */
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #222;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+h1 { font-size: 1.5rem; }
+.description { color: #555; }
+.error { color: #b00020; font-weight: bold; }
+.loading { color: #555; }
+
+.legend ul { list-style: none; padding: 0; }
+.legend li { margin: 4px 0; }
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  border: 1px solid #999;
+  vertical-align: middle;
+}
+
+.table-wrapper { overflow-x: auto; }
+.population-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+}
+.population-table th,
+.population-table td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: right;
+  white-space: nowrap;
+}
+.population-table thead th { text-align: center; }
+.year-col { background: #f2f2f2; text-align: center; }
+
+.group-0 { background: var(--group-0); }
+.group-1 { background: var(--group-1); }
+.group-2 { background: var(--group-2); }
+
+.credit { font-size: 0.8rem; color: #777; margin-top: 16px; }
+
